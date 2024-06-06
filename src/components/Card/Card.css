@@ -1,0 +1,12 @@
+.cardWrapper{
+    width: 120px;
+    height: 160px;
+    border: 2px solid green;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cardTitle{
+    font-size: 24px;
+    margin: auto;
+}
