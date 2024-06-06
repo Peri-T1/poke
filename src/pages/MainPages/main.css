@@ -1,5 +1,15 @@
 .wrapper {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
+    width: 1200px;
+    height: 100vh;
+    justify-content: center;
+    
+    
+}
+
+.btnPokemon {
+    margin-top: 10px;
+    position:fixed;
 }

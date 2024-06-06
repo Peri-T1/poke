@@ -1,0 +1,15 @@
+.pokemonPageWrap {
+    display: flex;
+    justify-content: space-evenly;
+    color: violet;
+    
+}
+
+
+.pokemonImg {
+   
+    width: 500px;
+    height: 600px;
+    border: 2px solid violet;
+    border-radius: 20px;
+}

@@ -16,19 +16,21 @@ setResult(data)
   
     return (
       <>
+            <div className="btnPokemon">
+        <button onClick={() => handleGetPokemon(result.previous)}>Prev</button>
+        <button onClick={() => handleGetPokemon(result.next)}>Next</button>
+      </div>
       <div className="wrapper">
       {result?.results?.map((item, index) => (
         <div key={index}> 
         {/* <p>{index + 1} - {item.name} </p> */}
         <Card name={item.name}>{item.name}</Card>
         </div>
+       
       ))}
       </div>
-      <div>
-        <button onClick={() => handleGetPokemon(result.previous)}>Prev</button>
-        <button onClick={() => handleGetPokemon(result.next)}>Next</button>
-      </div>
       
+
       </>
     )
   }

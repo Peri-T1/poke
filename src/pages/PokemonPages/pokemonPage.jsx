@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { useLocation } from "react-router-dom"
+import './pokemonPage.css'
 
 // const PokemonPage = (props) => {
 
@@ -26,9 +27,15 @@ import { useLocation } from "react-router-dom"
 
     return (
     <>
-<h1>{pokemonData?.name}</h1>
-<img src={pokemonData?.sprites.front_default} alt={pokemonData?.name} />
-<p>{pokemonData?.order}</p>
+    <div className="pokemonPageWrap">
+
+<img src={pokemonData?.sprites.front_default} alt={pokemonData?.name} className="pokemonImg"/>
+
+<h1>{pokemonData?.name} № {pokemonData?.order}</h1>
+
+</div>
+
+   
     </>
     )
 }

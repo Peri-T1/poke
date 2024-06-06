@@ -5,7 +5,7 @@ const Header = () => {
 
     return (
         <>
-        <Link to={'/'}>To main</Link>
+        <Link to={'/'}>На главную</Link>
         {/* <a href="/"> To Main </a> */}
         </>
     )

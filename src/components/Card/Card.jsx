@@ -7,13 +7,14 @@ const Card = (props) => {
 
 const {children, name} = props
     return(
-    
-        // <a href={name}>
+    <>
+        {/* <a href={name}> */}
     <div className='cardWrapper' onClick={() => navigate(`pokemon/${name}`)}>
-    <p className='cardTitle'>{children}</p>
+   
     </div>
-    // </a>  
-    
+     <p className='cardTitle' onClick={() => navigate(`pokemon/${name}`)}>{children}</p>
+     {/* </a>   */}
+    </>
     )
 }
 
