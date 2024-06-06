@@ -1,8 +1,12 @@
+import { Link } from "react-router-dom"
+
+
 const Header = () => {
 
     return (
         <>
-        <a href=""> To Main </a>
+        <Link to={'/'}>To main</Link>
+        {/* <a href="/"> To Main </a> */}
         </>
     )
 
